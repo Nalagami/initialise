@@ -1,41 +1,41 @@
 #########################
-# python ‚Ìİ’è
+# python ã®è¨­å®š
 # version 3.11
 ######################### 
 winget install --id Python.Python.3.11 --accept-package-agreements
 
 #########################
-# git‚Ìİ’è
-# Q˜V https://blog.katsubemakito.net/git/git-config-1st 
+# gitã®è¨­å®š
+# å‚è€ https://blog.katsubemakito.net/git/git-config-1st 
 ######################### 
 
-# ƒ†[ƒU[–¼Aƒ[ƒ‹ƒAƒhƒŒƒX
+# ãƒ¦ãƒ¼ã‚¶ãƒ¼åã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹
 git config --global user.name 'nalagami'
 git config --global user.email 'tnt5547@gmail.com'
 
-# push•û®
+# pushæ–¹å¼
 git config --global push.default current
 
-# pull•û®
+# pullæ–¹å¼
 git config --global pull.ff only
 git config --global pull.rebase false
 
-# ƒfƒtƒHƒ‹ƒgƒuƒ‰ƒ“ƒ`–¼
+# ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ–ãƒ©ãƒ³ãƒå
 git config --global init.defaultBranch main
 
-# ‰üsƒR[ƒh©“®•ÏŠ·İ’è
+# æ”¹è¡Œã‚³ãƒ¼ãƒ‰è‡ªå‹•å¤‰æ›è¨­å®š
 git config --global core.autocrlf false
 
-# ƒtƒ@ƒCƒ‹–¼ ‘å•¶š¬•¶š¯•Êİ’è
+# ãƒ•ã‚¡ã‚¤ãƒ«å å¤§æ–‡å­—å°æ–‡å­—è­˜åˆ¥è¨­å®š
 git config --global core.ignorecase false
 
-# ƒnƒCƒ‰ƒCƒgİ’è
+# ãƒã‚¤ãƒ©ã‚¤ãƒˆè¨­å®š
 git config --global color.ui true
 
-# ƒfƒtƒHƒ‹ƒgƒGƒfƒBƒ^
+# ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚¨ãƒ‡ã‚£ã‚¿
 git config --global core.editor 'code --wait'
 
-# ƒGƒCƒŠƒAƒXİ’è
+# ã‚¨ã‚¤ãƒªã‚¢ã‚¹è¨­å®š
 git config --global alias.st status
 git config --global alias.df diff
 git config --global alias.co commit
@@ -44,24 +44,24 @@ git config --global alias.ps push
 git config --global alias.pl pull
 git config --global alias.ck checkout
 
-# “ú–{Œêƒtƒ@ƒCƒ‹–¼‚ğƒGƒ“ƒR[ƒh‚µ‚È‚¢
+# æ—¥æœ¬èªãƒ•ã‚¡ã‚¤ãƒ«åã‚’ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã—ãªã„
 git config --global core.quotepath false
 
-# vacuumƒRƒ}ƒ“ƒh‚ğ’Ç‰Á
+# vacuumã‚³ãƒãƒ³ãƒ‰ã‚’è¿½åŠ 
 # https://qiita.com/hajimeni/items/73d2155fc59e152630c4
 Add-Content -Path $HOME/.gitconfig -Encoding utf8 "[alias]`n`tvacuum = `"!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; git fetch --prune; };f`""
 
-# git‚Ìó‘Ô‚ğ•\¦‚·‚éƒAƒvƒŠ‚ğƒCƒ“ƒXƒg[ƒ‹
+# gitã®çŠ¶æ…‹ã‚’è¡¨ç¤ºã™ã‚‹ã‚¢ãƒ—ãƒªã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 # https://github.com/dahlbyk/posh-git/blob/master/README.md
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
 Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
 Add-PoshGitToProfile -AllHosts
 
 #########################
-# node.js‚Ìİ’è
+# node.jsã®è¨­å®š
 ######################### 
 
-# nvm ƒCƒ“ƒXƒg[ƒ‹
+# nvm ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 winget install --id CoreyButler.NVMforWindows --accept-package-agreements
 # nvm install --lts
 
@@ -69,22 +69,22 @@ winget install --id CoreyButler.NVMforWindows --accept-package-agreements
 npm install -g git-cz
 
 #########################
-# aws cli ‚Ìİ’è
+# aws cli ã®è¨­å®š
 ######################### 
 
-# aws cli ƒCƒ“ƒXƒg[ƒ‹
+# aws cli ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 winget install --id Amazon.AWSCLI --accept-package-agreements
 
 #########################
-# ServerlessFramework‚Ìİ’è
+# ServerlessFrameworkã®è¨­å®š
 ######################### 
 
-# ServerlessFramework ƒCƒ“ƒXƒg[ƒ‹
+# ServerlessFramework ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 npm install -g serverless
 
 #########################
-# Terraform‚Ìİ’è
+# Terraformã®è¨­å®š
 ######################### 
 
-# terraform ƒCƒ“ƒXƒg[ƒ‹
+# terraform ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 winget install --id Hashicorp.Terraform --accept-package-agreements
